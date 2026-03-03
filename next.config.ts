@@ -4,7 +4,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 
 const nextConfig: NextConfig = {
-  // Enables standalone mode, which radically reduces the Vercel bundle size
+  // 1. Standalone mode radically reduces the Vercel bundle size
   output: "standalone",
 
   allowedDevOrigins: [
@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
     'http://192.168.31.*:3000',
   ],
 
-  // In Next.js 15+, this is now a top-level configuration property
+  // 2. This is now a TOP-LEVEL configuration property in Next.js 15
   outputFileTracingExcludes: {
     "**/*": [
       ".next/cache/**/*",
