@@ -1,0 +1,3 @@
+.next/cache
+.git
+node_modules/.cache
