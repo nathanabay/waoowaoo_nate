@@ -1,3 +1,4 @@
-.next/cache
-.git
+.next
 node_modules/.cache
+src/assets/fonts
+public/test-videos
