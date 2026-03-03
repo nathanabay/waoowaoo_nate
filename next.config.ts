@@ -12,14 +12,12 @@ const nextConfig: NextConfig = {
     'http://192.168.31.*:3000',
   ],
 
-  experimental: {
-    // Explicitly exclude caching mechanisms from serverless bundle
-    outputFileTracingExcludes: {
-      "**/*": [
-        ".next/cache/**",
-        "node_modules/@swc/**",
-      ],
-    },
+  // In Next.js 15+, this is now a top-level configuration property
+  outputFileTracingExcludes: {
+    "**/*": [
+      ".next/cache/**/*",
+      "node_modules/@swc/**/*",
+    ],
   },
 };
 
